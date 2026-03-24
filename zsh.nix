@@ -24,6 +24,10 @@
 
     # Extra commands added to the end of .zshrc
     initContent = ''
+      # Source Nix profile so Nix-installed binaries are on PATH
+      # (needed on non-NixOS Linux where Nix is a standalone package manager)
+      [ -f ~/.nix-profile/etc/profile.d/nix.sh ] && source ~/.nix-profile/etc/profile.d/nix.sh
+
       # Set locale to English
       export LANG="en_US.UTF-8"
       export LC_ALL="en_US.UTF-8"

@@ -87,6 +87,7 @@ Also installs:
 | Tool | Description |
 |------|-------------|
 | [bat](https://github.com/sharkdp/bat) | A better `cat` with syntax highlighting and line numbers |
+| [Cargo](https://doc.rust-lang.org/cargo/) | Rust package manager and build tool |
 | [Claude Code](https://claude.com/claude-code) | Anthropic's CLI for Claude |
 | [FiraCode Nerd Font](https://www.nerdfonts.com/) | Monospace font with ligatures and icons |
 | [JetBrains Mono Nerd Font](https://www.nerdfonts.com/) | Monospace font optimized for reading code |

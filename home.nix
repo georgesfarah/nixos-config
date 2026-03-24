@@ -29,6 +29,7 @@
     pkgs.go # Go programming language
     pkgs.nodejs # Node.js runtime
     pkgs.python3 # Python 3
+    pkgs.cargo # Rust package manager
   ]
   # macOS-only GUI apps
   ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [

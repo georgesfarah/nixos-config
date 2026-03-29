@@ -37,6 +37,16 @@
 
       # Load machine-specific config (not managed by Nix)
       [ -f ~/.zshrc.local ] && source ~/.zshrc.local
+
+      # Ctrl+H — fuzzy-search cheatsheet and insert selected line at cursor
+      _cheatsheet() {
+        local cmd
+        cmd=$(grep -v '^\s*#\|^\s*$' ~/.shell-cheatsheet.sh | sed 's/[[:space:]]*#.*$//' | fzf --height 40% --reverse)
+        LBUFFER+="$cmd"
+        zle redisplay
+      }
+      zle -N _cheatsheet
+      bindkey '^H' _cheatsheet
     '';
 
     # External plugins — these are NOT bundled with Oh My Zsh,

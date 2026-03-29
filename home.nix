@@ -37,6 +37,9 @@
     pkgs.iterm2 # iTerm2 terminal emulator
   ];
 
+  # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H
+  home.file.".shell-cheatsheet.sh".source = ./shell-cheatsheet.sh;
+
   # Let Home Manager manage itself (enables the `home-manager` CLI tool)
   programs.home-manager.enable = true;
 }

@@ -76,6 +76,14 @@ Configures zsh with Oh My Zsh and the following plugins:
 
 Also installs and integrates [fzf](https://github.com/junegunn/fzf).
 
+Keybindings:
+
+| Key | Action |
+|-----|--------|
+| `Ctrl+R` | Fuzzy-search shell history |
+| `Ctrl+T` | Fuzzy-search files |
+| `Ctrl+H` | Fuzzy-search cheatsheet and insert selected command at cursor |
+
 Also:
 - Uses [Starship](https://starship.rs/) as the prompt theme (Tokyo Night preset, language indicators disabled)
 - Sources `~/.zshrc.local` if it exists — use this for machine-specific config (e.g., work SSH keys, Homebrew, env variables) that shouldn't be committed to git

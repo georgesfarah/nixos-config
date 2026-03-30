@@ -30,6 +30,7 @@
     pkgs.nodejs # Node.js runtime
     pkgs.python3 # Python 3
     pkgs.cargo # Rust package manager
+    pkgs.terraform # Terraform infrastructure-as-code CLI
   ]
   # macOS-only GUI apps
   ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [

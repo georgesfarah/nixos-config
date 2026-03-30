@@ -105,5 +105,6 @@ Also installs:
 | [iTerm2](https://iterm2.com/) | Terminal emulator (macOS only) |
 | [Node.js](https://nodejs.org/) | JavaScript runtime |
 | [Python 3](https://www.python.org/) | Python programming language |
+| [Terraform](https://www.terraform.io/) | Infrastructure-as-code CLI |
 
 After activating, set the font in your terminal: **iTerm2 > Settings > Profiles > Text > Font** → select "FiraCode Nerd Font" or "JetBrainsMono Nerd Font".

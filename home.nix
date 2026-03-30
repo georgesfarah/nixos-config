@@ -31,6 +31,7 @@
     pkgs.python3 # Python 3
     pkgs.cargo # Rust package manager
     pkgs.terraform # Terraform infrastructure-as-code CLI
+    pkgs.protobuf # Protocol Buffers compiler (protoc)
   ]
   # macOS-only GUI apps
   ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [

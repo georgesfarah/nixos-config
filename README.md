@@ -104,6 +104,7 @@ Also installs:
 | [Google Chrome](https://www.google.com/chrome/) | Google Chrome browser (macOS only) |
 | [iTerm2](https://iterm2.com/) | Terminal emulator (macOS only) |
 | [Node.js](https://nodejs.org/) | JavaScript runtime |
+| [protobuf](https://protobuf.dev/) | Protocol Buffers compiler (`protoc`) |
 | [Python 3](https://www.python.org/) | Python programming language |
 | [Terraform](https://www.terraform.io/) | Infrastructure-as-code CLI |
 

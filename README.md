@@ -65,8 +65,8 @@ Configures zsh with Oh My Zsh and the following plugins:
 
 | Plugin | Source | Description |
 |--------|--------|-------------|
-| copyfile | Oh My Zsh | Copy file contents to clipboard |
-| copypath | Oh My Zsh | Copy current directory path to clipboard |
+| copyfile | Oh My Zsh | Copy file contents to clipboard (macOS only) |
+| copypath | Oh My Zsh | Copy current directory path to clipboard (macOS only) |
 | fzf | Oh My Zsh | Fuzzy finder integration |
 | git | Oh My Zsh | Git aliases and completions |
 | web-search | Oh My Zsh | Search Google/DuckDuckGo/etc. from terminal |

@@ -20,6 +20,12 @@
   # bat — a better `cat` with syntax highlighting and line numbers
   programs.bat.enable = true;
 
+  # tmux — terminal multiplexer
+  programs.tmux = {
+    enable = true;
+    mouse = true;
+  };
+
   # Extra packages
   home.packages = [
     pkgs.claude-code # Claude Code CLI

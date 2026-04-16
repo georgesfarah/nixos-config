@@ -107,5 +107,6 @@ Also installs:
 | [protobuf](https://protobuf.dev/) | Protocol Buffers compiler (`protoc`) |
 | [Python 3](https://www.python.org/) | Python programming language |
 | [Terraform](https://www.terraform.io/) | Infrastructure-as-code CLI |
+| [tmux](https://github.com/tmux/tmux) | Terminal multiplexer (mouse mode enabled) |
 
 After activating, set the font in your terminal: **iTerm2 > Settings > Profiles > Text > Font** → select "FiraCode Nerd Font" or "JetBrainsMono Nerd Font".

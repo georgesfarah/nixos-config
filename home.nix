@@ -24,6 +24,20 @@
   programs.tmux = {
     enable = true;
     mouse = true;
+    prefix = "C-a";
+    plugins = with pkgs.tmuxPlugins; [
+      sensible    # tmux-sensible — sane defaults (UTF-8, larger history, faster key repeat, etc.)
+      catppuccin  # Catppuccin — pastel color theme for tmux
+    ];
+    extraConfig = ''
+      unbind C-b
+      bind C-a send-prefix
+      bind h select-pane -L
+      bind j select-pane -D
+      bind k select-pane -U
+      bind l select-pane -R
+      bind r source-file ~/.config/tmux/tmux.conf \; display-message "Config reloaded"
+    '';
   };
 
   # Extra packages

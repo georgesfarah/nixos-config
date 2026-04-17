@@ -32,10 +32,29 @@
     extraConfig = ''
       unbind C-b
       bind C-a send-prefix
+
+      set -g default-terminal "tmux-256color"
+
+      # Start numbering at 1
+      set -g base-index 1
+      setw -g pane-base-index 1
+
+      # Renumber windows when one is closed
+      set -g renumber-windows on
+
+      # Increase scrollback buffer
+      set -g history-limit 50000
+
+      # Vim-style pane navigation
       bind h select-pane -L
       bind j select-pane -D
       bind k select-pane -U
       bind l select-pane -R
+
+      # Intuitive splits (in current path)
+      bind | split-window -h -c "#{pane_current_path}"
+      bind - split-window -v -c "#{pane_current_path}"
+
       bind r source-file ~/.config/tmux/tmux.conf \; display-message "Config reloaded"
     '';
   };

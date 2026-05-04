@@ -27,8 +27,11 @@
 
     # Extra commands added to the end of .zshrc
     initContent = ''
-      # Source Nix daemon profile so Nix-installed binaries are on PATH
-      if [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
+      # Source Nix profile so Nix-installed binaries are on PATH.
+      # Single-user installs use ~/.nix-profile; multi-user installs use the global default profile.
+      if [ -e "$HOME/.nix-profile/etc/profile.d/nix-daemon.sh" ]; then
+        . "$HOME/.nix-profile/etc/profile.d/nix-daemon.sh"
+      elif [ -e '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' ]; then
         . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
       fi
 

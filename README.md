@@ -51,9 +51,14 @@ home.homeDirectory = "/Users/your-username";
 Then apply:
 
 ```sh
+# Make sure Nix binaries are on PATH first (required in non-login shells)
+. "$HOME/.nix-profile/etc/profile.d/nix-daemon.sh" 2>/dev/null || \
+  . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh' 2>/dev/null
+
 home-manager switch -f ./home.nix -b backup
 ```
 
+- The `source` line puts `nix-build`, `nix-env`, etc. on PATH — needed if you're running from a shell that didn't load your zsh profile (e.g. a script or IDE terminal)
 - `-f` points to your custom `home.nix` instead of the default location (`~/.config/home-manager/home.nix`)
 - `-b backup` renames any conflicting files (like `.zshrc`) with a `.backup` suffix instead of failing
 

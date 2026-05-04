@@ -53,7 +53,7 @@
 
       # Intuitive splits (in current path)
       bind | split-window -h -c "#{pane_current_path}"
-      bind - split-window -v -c "#{pane_current_path}"
+      bind _ split-window -v -c "#{pane_current_path}"
 
       bind r source-file ~/.config/tmux/tmux.conf \; display-message "Config reloaded"
     '';

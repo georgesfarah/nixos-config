@@ -65,15 +65,12 @@
     pkgs.cargo # Rust package manager
     pkgs.terraform # Terraform infrastructure-as-code CLI
     pkgs.protobuf # Protocol Buffers compiler (protoc)
-    pkgs.ghostty # Ghostty terminfo (fixes tab completion rendering in Ghostty terminal)
   ]
   # macOS-only GUI apps
   ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
     pkgs.google-chrome # Google Chrome browser
     pkgs.iterm2 # iTerm2 terminal emulator
   ];
-
-  home.sessionVariables.TERMINFO_DIRS = "${pkgs.ghostty.terminfo}/share/terminfo:/usr/share/terminfo";
 
   # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H
   home.file.".shell-cheatsheet.sh".source = ./shell-cheatsheet.sh;

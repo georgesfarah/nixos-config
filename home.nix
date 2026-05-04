@@ -45,12 +45,6 @@
       # Increase scrollback buffer
       set -g history-limit 50000
 
-      # Vim-style pane navigation
-      bind h select-pane -L
-      bind j select-pane -D
-      bind k select-pane -U
-      bind l select-pane -R
-
       # Intuitive splits (in current path)
       bind | split-window -h -c "#{pane_current_path}"
       bind _ split-window -v -c "#{pane_current_path}"

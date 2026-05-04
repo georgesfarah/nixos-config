@@ -73,7 +73,6 @@
     pkgs.iterm2 # iTerm2 terminal emulator
   ];
 
-  # Make Ghostty's terminfo discoverable so zsh tab completion renders correctly
   home.sessionVariables.TERMINFO_DIRS = "${pkgs.ghostty.terminfo}/share/terminfo:/usr/share/terminfo";
 
   # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H

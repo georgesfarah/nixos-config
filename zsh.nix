@@ -39,6 +39,11 @@
       # Add go install-ed binaries to PATH
       export PATH="$HOME/go/bin:$PATH"
 
+      # tmux socket directory — /run/user/$UID may be root-owned in some setups
+      export TMUX_TMPDIR="/tmp/tmux-$UID"
+      mkdir -p "$TMUX_TMPDIR"
+      chmod 700 "$TMUX_TMPDIR"
+
       # Load machine-specific config (not managed by Nix)
       [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 

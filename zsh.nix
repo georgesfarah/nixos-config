@@ -35,6 +35,10 @@
         . '/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh'
       fi
 
+      # Ghostty sets TERM=xterm-ghostty which lacks a terminfo on most systems.
+      # Fall back to xterm-256color outside tmux (tmux manages TERM itself inside).
+      [[ "$TERM" == "xterm-ghostty" && -z "$TMUX" ]] && export TERM=xterm-256color
+
       # Set locale to English
       export LANG="en_US.UTF-8"
       export LC_ALL="en_US.UTF-8"

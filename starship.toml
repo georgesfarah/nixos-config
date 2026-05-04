@@ -2,7 +2,9 @@
 
 
 format = """
-[](bg:#769ff0)\
+[](bg:#9A348E)\
+$hostname\
+[](fg:#9A348E bg:#769ff0)\
 $directory\
 [](fg:#769ff0 bg:#394260)\
 $git_branch\
@@ -12,6 +14,11 @@ $git_status\
 $time\
 [ ](fg:#1d2230)\
 \n$character"""
+
+[hostname]
+ssh_only = false
+style = "fg:#e3e5e5 bg:#9A348E"
+format = "[ $hostname ]($style)"
 
 [directory]
 style = "fg:#e3e5e5 bg:#769ff0"

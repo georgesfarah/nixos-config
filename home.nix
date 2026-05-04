@@ -33,8 +33,6 @@
       unbind C-b
       bind C-a send-prefix
 
-      set -g default-terminal "tmux-256color"
-
       # Start numbering at 1
       set -g base-index 1
       setw -g pane-base-index 1

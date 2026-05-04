@@ -65,11 +65,6 @@
     pkgs.cargo # Rust package manager
     pkgs.terraform # Terraform infrastructure-as-code CLI
     pkgs.protobuf # Protocol Buffers compiler (protoc)
-  ]
-  # macOS-only GUI apps
-  ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
-    pkgs.google-chrome # Google Chrome browser
-    pkgs.iterm2 # iTerm2 terminal emulator
   ];
 
   # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H

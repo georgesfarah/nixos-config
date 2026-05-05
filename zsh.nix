@@ -17,11 +17,6 @@
         "git"        # Git aliases (e.g., gst=git status, gco=git checkout)
         "web-search" # Search from terminal (e.g., `google nix tutorial`)
         "z"          # Jump to frequently visited directories (e.g., `z myproject`)
-      ]
-      # macOS-only plugins (require pbcopy)
-      ++ pkgs.lib.optionals pkgs.stdenv.isDarwin [
-        "copyfile"   # Run `copyfile <file>` to copy file contents to clipboard
-        "copypath"   # Run `copypath` to copy current directory to clipboard
       ];
     };
 

@@ -70,8 +70,6 @@ Configures zsh with Oh My Zsh and the following plugins:
 
 | Plugin | Source | Description |
 |--------|--------|-------------|
-| copyfile | Oh My Zsh | Copy file contents to clipboard (macOS only) |
-| copypath | Oh My Zsh | Copy current directory path to clipboard (macOS only) |
 | fzf | Oh My Zsh | Fuzzy finder integration |
 | git | Oh My Zsh | Git aliases and completions |
 | web-search | Oh My Zsh | Search Google/DuckDuckGo/etc. from terminal |
@@ -112,4 +110,4 @@ Also installs:
 | [Terraform](https://www.terraform.io/) | Infrastructure-as-code CLI |
 | [tmux](https://github.com/tmux/tmux) | Terminal multiplexer (mouse mode enabled) |
 
-After activating, set the font in your terminal to "FiraCode Nerd Font" or "JetBrainsMono Nerd Font".
+After activating, set the font in your terminal emulator's settings to "FiraCode Nerd Font" or "JetBrainsMono Nerd Font".

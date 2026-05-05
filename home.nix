@@ -49,6 +49,8 @@
       bind | split-window -h -c "#{pane_current_path}"
       bind _ split-window -v -c "#{pane_current_path}"
 
+      set-option -g automatic-rename off
+
       bind r source-file ~/.config/tmux/tmux.conf \; display-message "Config reloaded"
     '';
   };

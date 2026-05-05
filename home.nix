@@ -67,7 +67,11 @@
     pkgs.cargo # Rust package manager
     pkgs.terraform # Terraform infrastructure-as-code CLI
     pkgs.protobuf # Protocol Buffers compiler (protoc)
-  ];
+  ] ++ (if pkgs.stdenv.isDarwin then [
+    pkgs.ghostty-bin # Ghostty terminal emulator (macOS binary)
+  ] else [
+    pkgs.ghostty # Ghostty terminal emulator (Linux)
+  ]);
 
   # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H
   home.file.".shell-cheatsheet.sh".source = ./shell-cheatsheet.sh;

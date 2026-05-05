@@ -102,6 +102,7 @@ Also installs:
 | [Claude Code](https://claude.com/claude-code) | Anthropic's CLI for Claude |
 | [FiraCode Nerd Font](https://www.nerdfonts.com/) | Monospace font with ligatures and icons |
 | [JetBrains Mono Nerd Font](https://www.nerdfonts.com/) | Monospace font optimized for reading code |
+| [Ghostty](https://ghostty.org/) | GPU-accelerated terminal emulator (`ghostty-bin` on macOS, `ghostty` on Linux) |
 | [GNU coreutils](https://www.gnu.org/software/coreutils/) | GNU versions of ls, cp, mv, etc. |
 | [Go](https://go.dev/) | Go programming language |
 | [Node.js](https://nodejs.org/) | JavaScript runtime |

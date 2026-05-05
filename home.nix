@@ -73,6 +73,11 @@
     pkgs.ghostty # Ghostty terminal emulator (Linux)
   ]);
 
+  # Ghostty — config with SSH integration (auto terminfo install + env forwarding)
+  home.file.".config/ghostty/config".text = ''
+    shell-integration-features = ssh-env,ssh-terminfo
+  '';
+
   # Shell cheatsheet — available at ~/.shell-cheatsheet.sh, searchable via Ctrl+H
   home.file.".shell-cheatsheet.sh".source = ./shell-cheatsheet.sh;
 
